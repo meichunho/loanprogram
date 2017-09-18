@@ -488,6 +488,66 @@ paths:
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
 definitions:
+  GetLoadProgramsByTenantIdAndClientIdResponse:
+    title: GetLoadProgramsByTenantIdAndClientIdResponse
+    type: object
+    properties:
+      rowCount:
+        description: ''
+        type: integer
+        format: int32
+      data:
+        description: ''
+        type: array
+        items:
+          $ref: '#/definitions/Datum'
+      statusDescription:
+        description: ''
+        type: string
+      statusCode:
+        description: ''
+        type: integer
+        format: int32
+    required:
+    - rowCount
+    - data
+    - statusDescription
+    - statusCode
+  Datum:
+    title: Datum
+    type: object
+    properties:
+      ProgramId:
+        description: ''
+        type: integer
+        format: int32
+      ProgramName:
+        description: ''
+        type: string
+      ProgramType:
+        description: ''
+        type: string
+      BaseRate:
+        description: ''
+        type: string
+      RateChangeFrequency:
+        description: ''
+        type: string
+      InterestAccrualMethod:
+        description: ''
+        type: string
+      IsActive:
+        description: ''
+        type: integer
+        format: int32
+    required:
+    - ProgramId
+    - ProgramName
+    - ProgramType
+    - BaseRate
+    - RateChangeFrequency
+    - InterestAccrualMethod
+    - IsActive
   PostLoadProgramsByTenantIdAndClientIdRequest:
     title: PostLoadProgramsByTenantIdAndClientIdRequest
     example:
