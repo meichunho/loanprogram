@@ -1,0 +1,563 @@
+swagger: '2.0'
+info:
+  version: '1.0'
+  title: quasar LoanPrograms
+  description: 'TODO: Add Description'
+  license:
+    name: MIT
+    url: http://github.com/gruntjs/grunt/blob/master/LICENSE-MIT
+host: quasarloanprograms.us-west-2.elasticbeanstalk.com
+basePath: /
+schemes:
+- http
+consumes:
+- application/json
+produces:
+- application/json
+paths:
+  /v1/loanprograms:
+    get:
+      description: 'TODO: Add Description'
+      summary: GetLoadProgramsByTenantIdAndClientIdAndProgramId
+      tags:
+      - LoanPrograms v1
+      operationId: GetLoadProgramsByTenantIdAndClientIdAndProgramId
+      produces:
+      - application/json
+      parameters:
+      - name: clientId
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: tenantId
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: GET
+          uri: /v1/loanprograms
+          headers:
+            clientId: 10
+            tenantId: 10
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: GetLoadProgramsByTenantIdAndClientIdAndProgramId
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    post:
+      description: 'TODO: Add Description'
+      summary: PostLoadProgramsByTenantIdAndClientId
+      tags:
+      - LoanPrograms v1
+      operationId: PostLoadProgramsByTenantIdAndClientId
+      produces:
+      - application/json
+      parameters:
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/PostLoadProgramsByTenantIdAndClientIdRequest'
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: clientId
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: tenantId
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: POST
+          uri: /v1/loanprograms
+          headers:
+            Content-Type: application/json
+            clientId: 10
+            tenantId: 10
+          body: >-
+            {
+
+            	"programId": 6,
+
+            	"programName": "Rustic Granite Pizza 6",
+
+            	"isActive": 1
+
+            }
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: PostLoadProgramsByTenantIdAndClientId
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /v1/loanprograms/6:
+    put:
+      description: 'TODO: Add Description'
+      summary: PutLoadProgramsByTenantIdAndClientId
+      tags:
+      - LoanPrograms v1
+      operationId: PutLoadProgramsByTenantIdAndClientId
+      produces:
+      - application/json
+      parameters:
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/PutLoadProgramsByTenantIdAndClientIdRequest'
+      - name: clientId
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: tenantId
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: PUT
+          uri: /v1/loanprograms/6
+          headers:
+            Content-Type: application/json
+            clientId: 10
+            tenantId: 10
+          body: >-
+            {
+
+            	"programId": 6,
+
+            	"programName": "Rustic Granite Pizza 6.1",
+
+            	"isActive": 1
+
+            }
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: PutLoadProgramsByTenantIdAndClientId
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    delete:
+      description: 'TODO: Add Description'
+      summary: DeleteLoadProgramsByTenantIdAndClientId
+      tags:
+      - LoanPrograms v1
+      operationId: DeleteLoadProgramsByTenantIdAndClientId
+      produces:
+      - application/json
+      parameters:
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/DeleteLoadProgramsByTenantIdAndClientIdRequest'
+      - name: clientId
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: tenantId
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: DELETE
+          uri: /v1/loanprograms/6
+          headers:
+            Content-Type: application/json
+            clientId: 10
+            tenantId: 10
+          body: >-
+            {
+              "programId": "2",
+              "programName": "Loan Program 2"
+            }
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: DeleteLoadProgramsByTenantIdAndClientId
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /v1/loanprograms/2:
+    patch:
+      description: 'TODO: Add Description'
+      summary: PatchLoadProgramsByTenantIdAndClientId
+      tags:
+      - LoanPrograms v1
+      operationId: PatchLoadProgramsByTenantIdAndClientId
+      produces:
+      - application/json
+      parameters:
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/PatchLoadProgramsByTenantIdAndClientIdRequest'
+      - name: clientId
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: tenantId
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: PATCH
+          uri: /v1/loanprograms/2
+          headers:
+            Content-Type: application/json
+            clientId: 10
+            tenantId: 10
+          body: >-
+            {
+              "programName": "Loan Program 2.1"
+            }
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: PatchLoadProgramsByTenantIdAndClientId
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /v1/loanprogramtemplates:
+    get:
+      description: 'TODO: Add Description'
+      summary: Get All Loan Program Templates
+      tags:
+      - Loan Programs Template v1
+      operationId: Get All Loan Program Templates
+      produces:
+      - application/json
+      parameters: []
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: GET
+          uri: /v1/loanprogramtemplates
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Get All Loan Program Templates
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /v1/loanprogramtemplates/BasePersonal Variable1:
+    get:
+      description: 'TODO: Add Description'
+      summary: Get All Loan Program Templates by Template Name
+      tags:
+      - Loan Programs Template v1
+      operationId: Get All Loan Program Templates by Template Name
+      produces:
+      - application/json
+      parameters: []
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: GET
+          uri: /v1/loanprogramtemplates/BasePersonal Variable1
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Get All Loan Program Templates by Template Name
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /v2/loanprograms:
+    get:
+      description: 'TODO: Add Description'
+      summary: Get Client Specific Templates
+      tags:
+      - Loan Program v2
+      operationId: Get Client Specific Templates
+      produces:
+      - application/json
+      parameters:
+      - name: tenantid
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: clientid
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: GET
+          uri: /v2/loanprograms
+          headers:
+            tenantid: 1
+            clientid: 2
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Get Client Specific Templates
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /v2/loanprograms/BasePersonalFixed:
+    get:
+      description: 'TODO: Add Description'
+      summary: Get Client Specific Templates by Template Name
+      tags:
+      - Loan Program v2
+      operationId: Get Client Specific Templates by Template Name
+      produces:
+      - application/json
+      parameters:
+      - name: tenantid
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: clientid
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: GET
+          uri: /v2/loanprograms/BasePersonalFixed
+          headers:
+            tenantid: 1
+            clientid: 2
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Get Client Specific Templates by Template Name
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+definitions:
+  PostLoadProgramsByTenantIdAndClientIdRequest:
+    title: PostLoadProgramsByTenantIdAndClientIdRequest
+    example:
+      programId: 6
+      programName: Rustic Granite Pizza 6
+      isActive: 1
+    type: object
+    properties:
+      programId:
+        description: ''
+        type: integer
+        format: int32
+      programName:
+        description: ''
+        type: string
+      isActive:
+        description: ''
+        type: integer
+        format: int32
+    required:
+    - programId
+    - programName
+    - isActive
+  PutLoadProgramsByTenantIdAndClientIdRequest:
+    title: PutLoadProgramsByTenantIdAndClientIdRequest
+    example:
+      programId: 6
+      programName: Rustic Granite Pizza 6.1
+      isActive: 1
+    type: object
+    properties:
+      programId:
+        description: ''
+        type: integer
+        format: int32
+      programName:
+        description: ''
+        type: string
+      isActive:
+        description: ''
+        type: integer
+        format: int32
+    required:
+    - programId
+    - programName
+    - isActive
+  DeleteLoadProgramsByTenantIdAndClientIdRequest:
+    title: DeleteLoadProgramsByTenantIdAndClientIdRequest
+    example:
+      programId: 2
+      programName: Loan Program 2
+    type: object
+    properties:
+      programId:
+        description: ''
+        type: string
+      programName:
+        description: ''
+        type: string
+    required:
+    - programId
+    - programName
+  PatchLoadProgramsByTenantIdAndClientIdRequest:
+    title: PatchLoadProgramsByTenantIdAndClientIdRequest
+    example:
+      programName: Loan Program 2.1
+    type: object
+    properties:
+      programName:
+        description: ''
+        type: string
+    required:
+    - programName
