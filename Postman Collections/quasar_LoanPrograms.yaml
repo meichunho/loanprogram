@@ -673,6 +673,32 @@ paths:
 definitions:
   GetLoadProgramsByTenantIdAndClientIdResponse:
     title: GetLoadProgramsByTenantIdAndClientIdResponse
+    example:
+      rowCount: 3
+      data:
+      - ProgramId: 2
+        ProgramName: Loan Program 2.1
+        ProgramType: null
+        BaseRate: null
+        RateChangeFrequency: null
+        InterestAccrualMethod: null
+        IsActive: 0
+      - ProgramId: 4
+        ProgramName: Loan Program 4
+        ProgramType: null
+        BaseRate: null
+        RateChangeFrequency: null
+        InterestAccrualMethod: null
+        IsActive: 0
+      - ProgramId: 6
+        ProgramName: Rustic Granite Pizza 6.1
+        ProgramType: null
+        BaseRate: null
+        RateChangeFrequency: null
+        InterestAccrualMethod: null
+        IsActive: 1
+      statusDescription: OK
+      statusCode: 200
     type: object
     properties:
       rowCount:
