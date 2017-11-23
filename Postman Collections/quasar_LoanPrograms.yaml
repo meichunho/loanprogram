@@ -17,7 +17,7 @@ produces:
 paths:
   /v1/loanprograms:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: GetLoadProgramsByTenantIdAndClientIdAndProgramId
       tags:
       - LoanPrograms v1
@@ -56,14 +56,14 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: GetLoadProgramsByTenantIdAndClientIdAndProgramId
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
     post:
-      description: 'TODO: Add Description'
+      description: ''
       summary: PostLoadProgramsByTenantIdAndClientId
       tags:
       - LoanPrograms v1
@@ -124,7 +124,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: PostLoadProgramsByTenantIdAndClientId
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -132,7 +132,7 @@ paths:
         IsMultiContentStreaming: false
   /v1/loanprograms/6:
     put:
-      description: 'TODO: Add Description'
+      description: ''
       summary: PutLoadProgramsByTenantIdAndClientId
       tags:
       - LoanPrograms v1
@@ -193,14 +193,14 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: PutLoadProgramsByTenantIdAndClientId
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
     delete:
-      description: 'TODO: Add Description'
+      description: ''
       summary: DeleteLoadProgramsByTenantIdAndClientId
       tags:
       - LoanPrograms v1
@@ -256,7 +256,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: DeleteLoadProgramsByTenantIdAndClientId
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -264,7 +264,7 @@ paths:
         IsMultiContentStreaming: false
   /v1/loanprograms/2:
     patch:
-      description: 'TODO: Add Description'
+      description: ''
       summary: PatchLoadProgramsByTenantIdAndClientId
       tags:
       - LoanPrograms v1
@@ -319,7 +319,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: PatchLoadProgramsByTenantIdAndClientId
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -327,7 +327,7 @@ paths:
         IsMultiContentStreaming: false
   /v1/loanprogramtemplates:
     get:
-      description: 'TODO: Add Description'
+      description: Get All Loan Program Templates
       summary: Get All Loan Program Templates
       tags:
       - Loan Programs Template v1
@@ -536,7 +536,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Get All Loan Program Templates
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: Get All Loan Program Templates
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -544,7 +544,7 @@ paths:
         IsMultiContentStreaming: false
   /v1/loanprogramtemplates/BasePersonal Variable1:
     get:
-      description: 'TODO: Add Description'
+      description: Get All Loan Program Templates by Template Name
       summary: Get All Loan Program Templates by Template Name
       tags:
       - Loan Programs Template v1
@@ -570,7 +570,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Get All Loan Program Templates by Template Name
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: Get All Loan Program Templates by Template Name
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -578,7 +578,7 @@ paths:
         IsMultiContentStreaming: false
   /v2/loanprograms:
     get:
-      description: 'TODO: Add Description'
+      description: Get Client Specific Templates
       summary: Get Client Specific Templates
       tags:
       - Loan Program v2
@@ -617,7 +617,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Get Client Specific Templates
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: Get Client Specific Templates
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -625,7 +625,7 @@ paths:
         IsMultiContentStreaming: false
   /v2/loanprograms/BasePersonalFixed:
     get:
-      description: 'TODO: Add Description'
+      description: Get Client Specific Templates by Template Name
       summary: Get Client Specific Templates by Template Name
       tags:
       - Loan Program v2
@@ -664,7 +664,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Get Client Specific Templates by Template Name
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: Get Client Specific Templates by Template Name
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
