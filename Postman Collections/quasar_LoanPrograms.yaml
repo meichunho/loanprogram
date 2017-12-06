@@ -21,7 +21,7 @@ paths:
       summary: GetLoadProgramsByTenantIdAndClientIdAndProgramId
       tags:
       - LoanPrograms v1
-      operationId: GetLoadProgramsByTenantIdAndClientIdAndProgramId
+      operationId: V1LoanprogramsGet2
       produces:
       - application/json
       parameters:
@@ -67,7 +67,7 @@ paths:
       summary: PostLoadProgramsByTenantIdAndClientId
       tags:
       - LoanPrograms v1
-      operationId: PostLoadProgramsByTenantIdAndClientId
+      operationId: V1LoanprogramsPost
       produces:
       - application/json
       parameters:
@@ -136,7 +136,7 @@ paths:
       summary: PutLoadProgramsByTenantIdAndClientId
       tags:
       - LoanPrograms v1
-      operationId: PutLoadProgramsByTenantIdAndClientId
+      operationId: V1Loanprograms6Put
       produces:
       - application/json
       parameters:
@@ -204,7 +204,7 @@ paths:
       summary: DeleteLoadProgramsByTenantIdAndClientId
       tags:
       - LoanPrograms v1
-      operationId: DeleteLoadProgramsByTenantIdAndClientId
+      operationId: V1Loanprograms6Delete
       produces:
       - application/json
       parameters:
@@ -268,7 +268,7 @@ paths:
       summary: PatchLoadProgramsByTenantIdAndClientId
       tags:
       - LoanPrograms v1
-      operationId: PatchLoadProgramsByTenantIdAndClientId
+      operationId: V1Loanprograms2Patch
       produces:
       - application/json
       parameters:
@@ -331,7 +331,7 @@ paths:
       summary: Get All Loan Program Templates
       tags:
       - Loan Programs Template v1
-      operationId: Get All Loan Program Templates
+      operationId: V1LoanprogramtemplatesGet
       produces:
       - application/json
       parameters: []
@@ -548,7 +548,7 @@ paths:
       summary: Get All Loan Program Templates by Template Name
       tags:
       - Loan Programs Template v1
-      operationId: Get All Loan Program Templates by Template Name
+      operationId: V1LoanprogramtemplatesBasePersonalVariable1Get
       produces:
       - application/json
       parameters: []
@@ -582,7 +582,7 @@ paths:
       summary: Get Client Specific Templates
       tags:
       - Loan Program v2
-      operationId: Get Client Specific Templates
+      operationId: V2LoanprogramsGet
       produces:
       - application/json
       parameters:
@@ -629,7 +629,7 @@ paths:
       summary: Get Client Specific Templates by Template Name
       tags:
       - Loan Program v2
-      operationId: Get Client Specific Templates by Template Name
+      operationId: V2LoanprogramsBasePersonalFixedGet
       produces:
       - application/json
       parameters:
