@@ -1305,55 +1305,6 @@ definitions:
         type: string
       Settings:
         $ref: '#/definitions/Settings'
-        example:
-          PaymentApplication:
-            Order: Fees/Interest/Principal
-            AllowPaidAhead: No
-          ReduceTerm:
-            Statuses:
-            - Status: Repayment
-            - Status: MilitaryRepayment
-            - Status: Bankruptcy
-            - Status: Claim
-            - Status: HardshipForbearance
-          Fees:
-            NSF:
-              PercentOrDollar: Amount
-              Minimum: 0
-              Maximum: 0
-              Amount: 20
-            Late:
-              PercentOrDollar: Percent
-              Minimum: 0
-              Maximum: 9999.9899999999998
-              DaysLate: 15
-              Statuses:
-              - Status: Repayment
-              - Status: Bankruptcy
-              - Status: Claim
-              Amount: 5
-          InterestAccrual:
-            Statuses:
-            - Status: Repayment
-              AutoPayIncentive: 0.25
-            - Status: MilitaryRepayment
-              AutoPayIncentive: 0.25
-              MaxRate: 6
-            - Status: Bankruptcy
-            - Status: Claim
-            - Status: Default
-            - Status: HardshipForbearance
-            - Status: DisasterForbearance
-            Frequency: Monthly
-            Method: Actual/Actual
-          Billing:
-            Statuses:
-            - Status: Repayment
-            - Status: MilitaryRepayment
-            - Status: HardshipForbearance
-            - Status: DisasterForbearance
-            Frequency: Monthly
-            Days: 21
       UpdatedDate:
         description: ''
         example: 2017-9-15
@@ -1442,62 +1393,14 @@ definitions:
     properties:
       PaymentApplication:
         $ref: '#/definitions/PaymentApplication'
-        example:
-          Order: Fees/Interest/Principal
-          AllowPaidAhead: No
       ReduceTerm:
         $ref: '#/definitions/ReduceTerm'
-        example:
-          Statuses:
-          - Status: Repayment
-          - Status: MilitaryRepayment
-          - Status: Bankruptcy
-          - Status: Claim
-          - Status: HardshipForbearance
       Fees:
         $ref: '#/definitions/Fees'
-        example:
-          NSF:
-            PercentOrDollar: Amount
-            Minimum: 0
-            Maximum: 0
-            Amount: 20
-          Late:
-            PercentOrDollar: Percent
-            Minimum: 0
-            Maximum: 9999.9899999999998
-            DaysLate: 15
-            Statuses:
-            - Status: Repayment
-            - Status: Bankruptcy
-            - Status: Claim
-            Amount: 5
       InterestAccrual:
         $ref: '#/definitions/InterestAccrual'
-        example:
-          Statuses:
-          - Status: Repayment
-            AutoPayIncentive: 0.25
-          - Status: MilitaryRepayment
-            AutoPayIncentive: 0.25
-            MaxRate: 6
-          - Status: Bankruptcy
-          - Status: Claim
-          - Status: Default
-          - Status: HardshipForbearance
-          - Status: DisasterForbearance
-          Frequency: Monthly
-          Method: Actual/Actual
       Billing:
         $ref: '#/definitions/Billing'
-        example:
-          Statuses:
-          - Status: Repayment
-          - Status: MilitaryRepayment
-          - Status: HardshipForbearance
-          - Status: DisasterForbearance
-          Frequency: Monthly
-          Days: 21
     required:
     - PaymentApplication
     - ReduceTerm
@@ -1580,23 +1483,8 @@ definitions:
     properties:
       NSF:
         $ref: '#/definitions/NSF'
-        example:
-          PercentOrDollar: Amount
-          Minimum: 0
-          Maximum: 0
-          Amount: 20
       Late:
         $ref: '#/definitions/Late'
-        example:
-          PercentOrDollar: Percent
-          Minimum: 0
-          Maximum: 9999.9899999999998
-          DaysLate: 15
-          Statuses:
-          - Status: Repayment
-          - Status: Bankruptcy
-          - Status: Claim
-          Amount: 5
     required:
     - NSF
     - Late
