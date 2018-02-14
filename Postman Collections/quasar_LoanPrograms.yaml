@@ -3,9 +3,6 @@ info:
   version: '1.0'
   title: quasar LoanPrograms
   description: 'TODO: Add Description'
-  license:
-    name: MIT
-    url: http://github.com/gruntjs/grunt/blob/master/LICENSE-MIT
 host: quasarloanprograms.us-west-2.elasticbeanstalk.com
 basePath: /
 schemes:
