@@ -336,7 +336,7 @@ paths:
         200:
           description: ''
           schema:
-            $ref: '#/definitions/GetAllLoanProgramTemplatesresponse'
+            $ref: '#/definitions/GetAllLoanProgramTemplates'
           examples:
             application/json:
               data:
@@ -668,8 +668,8 @@ paths:
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
 definitions:
-  GetLoadProgramsByTenantIdAndClientIdResponse:
-    title: GetLoadProgramsByTenantIdAndClientIdResponse
+  GetLoadProgramsByTenantIdAndClientId:
+    title: GetLoadProgramsByTenantIdAndClientId
     example:
       rowCount: 3
       data:
@@ -868,8 +868,8 @@ definitions:
         type: string
     required:
     - programName
-  GetAllLoanProgramTemplatesresponse:
-    title: Get All Loan Program TemplatesResponse
+  GetAllLoanProgramTemplates:
+    title: Get All Loan Program Templates
     example:
       data:
       - CreatedDate: 2017-09-15
