@@ -14,7 +14,7 @@ produces:
 paths:
   /v1/loanprograms:
     get:
-      description: ''
+      description: 'TODO: Add Description'
       summary: GetLoadProgramsByTenantIdAndClientIdAndProgramId
       tags:
       - LoanPrograms v1
@@ -53,14 +53,14 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: GetLoadProgramsByTenantIdAndClientIdAndProgramId
-        x-testDescription: ''
+        x-testDescription: 'TODO: Add Description'
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
     post:
-      description: ''
+      description: 'TODO: Add Description'
       summary: PostLoadProgramsByTenantIdAndClientId
       tags:
       - LoanPrograms v1
@@ -121,7 +121,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: PostLoadProgramsByTenantIdAndClientId
-        x-testDescription: ''
+        x-testDescription: 'TODO: Add Description'
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -129,7 +129,7 @@ paths:
         IsMultiContentStreaming: false
   /v1/loanprograms/6:
     put:
-      description: ''
+      description: 'TODO: Add Description'
       summary: PutLoadProgramsByTenantIdAndClientId
       tags:
       - LoanPrograms v1
@@ -190,14 +190,14 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: PutLoadProgramsByTenantIdAndClientId
-        x-testDescription: ''
+        x-testDescription: 'TODO: Add Description'
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
     delete:
-      description: ''
+      description: 'TODO: Add Description'
       summary: DeleteLoadProgramsByTenantIdAndClientId
       tags:
       - LoanPrograms v1
@@ -253,7 +253,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: DeleteLoadProgramsByTenantIdAndClientId
-        x-testDescription: ''
+        x-testDescription: 'TODO: Add Description'
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -261,7 +261,7 @@ paths:
         IsMultiContentStreaming: false
   /v1/loanprograms/2:
     patch:
-      description: ''
+      description: 'TODO: Add Description'
       summary: PatchLoadProgramsByTenantIdAndClientId
       tags:
       - LoanPrograms v1
@@ -316,7 +316,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: PatchLoadProgramsByTenantIdAndClientId
-        x-testDescription: ''
+        x-testDescription: 'TODO: Add Description'
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
