@@ -101,16 +101,7 @@ paths:
             Content-Type: application/json
             clientId: 10
             tenantId: 10
-          body: >-
-            {
-
-            	"programId": 6,
-
-            	"programName": "Rustic Granite Pizza 6",
-
-            	"isActive": 1
-
-            }
+          body: '{"programId":6,"programName":"Rustic Granite Pizza 6","isActive":1}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -170,16 +161,7 @@ paths:
             Content-Type: application/json
             clientId: 10
             tenantId: 10
-          body: >-
-            {
-
-            	"programId": 6,
-
-            	"programName": "Rustic Granite Pizza 6.1",
-
-            	"isActive": 1
-
-            }
+          body: '{"programId":6,"programName":"Rustic Granite Pizza 6.1","isActive":1}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -238,11 +220,7 @@ paths:
             Content-Type: application/json
             clientId: 10
             tenantId: 10
-          body: >-
-            {
-              "programId": "2",
-              "programName": "Loan Program 2"
-            }
+          body: '{"programId":"2","programName":"Loan Program 2"}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -302,10 +280,7 @@ paths:
             Content-Type: application/json
             clientId: 10
             tenantId: 10
-          body: >-
-            {
-              "programName": "Loan Program 2.1"
-            }
+          body: '{"programName":"Loan Program 2.1"}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
