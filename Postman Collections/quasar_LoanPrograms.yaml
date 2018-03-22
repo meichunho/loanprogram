@@ -742,12 +742,16 @@ definitions:
         type: string
       ProgramType:
         description: ''
+        type: null
       BaseRate:
         description: ''
+        type: null
       RateChangeFrequency:
         description: ''
+        type: null
       InterestAccrualMethod:
         description: ''
+        type: null
       IsActive:
         description: ''
         example: 0
