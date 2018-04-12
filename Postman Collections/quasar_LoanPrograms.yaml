@@ -650,24 +650,24 @@ definitions:
       data:
       - ProgramId: 2
         ProgramName: Loan Program 2.1
-        ProgramType: 
-        BaseRate: 
-        RateChangeFrequency: 
-        InterestAccrualMethod: 
+        ProgramType: null
+        BaseRate: null
+        RateChangeFrequency: null
+        InterestAccrualMethod: null
         IsActive: 0
       - ProgramId: 4
         ProgramName: Loan Program 4
-        ProgramType: 
-        BaseRate: 
-        RateChangeFrequency: 
-        InterestAccrualMethod: 
+        ProgramType: null
+        BaseRate: null
+        RateChangeFrequency: null
+        InterestAccrualMethod: null
         IsActive: 0
       - ProgramId: 6
         ProgramName: Rustic Granite Pizza 6.1
-        ProgramType: 
-        BaseRate: 
-        RateChangeFrequency: 
-        InterestAccrualMethod: 
+        ProgramType: null
+        BaseRate: null
+        RateChangeFrequency: null
+        InterestAccrualMethod: null
         IsActive: 1
       statusDescription: OK
       statusCode: 200
@@ -742,16 +742,16 @@ definitions:
         type: string
       ProgramType:
         description: ''
-        type: null
+        type: string
       BaseRate:
         description: ''
-        type: null
+        type: string
       RateChangeFrequency:
         description: ''
-        type: null
+        type: string
       InterestAccrualMethod:
         description: ''
-        type: null
+        type: string
       IsActive:
         description: ''
         example: 0
