@@ -68,12 +68,6 @@ paths:
       produces:
       - application/json
       parameters:
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/PostLoadProgramsByTenantIdAndClientIdRequest'
       - name: Content-Type
         in: header
         required: true
@@ -89,6 +83,12 @@ paths:
         required: true
         type: string
         description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/PostLoadProgramsByTenantIdAndClientIdRequest'
       responses:
         200:
           description: ''
@@ -128,12 +128,6 @@ paths:
       produces:
       - application/json
       parameters:
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/PutLoadProgramsByTenantIdAndClientIdRequest'
       - name: clientId
         in: header
         required: true
@@ -149,6 +143,12 @@ paths:
         required: true
         type: string
         description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/PutLoadProgramsByTenantIdAndClientIdRequest'
       responses:
         200:
           description: ''
@@ -158,9 +158,9 @@ paths:
           method: PUT
           uri: /v1/loanprograms/6
           headers:
-            Content-Type: application/json
             clientId: 10
             tenantId: 10
+            Content-Type: application/json
           body: '{"programId":6,"programName":"Rustic Granite Pizza 6.1","isActive":1}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -187,12 +187,6 @@ paths:
       produces:
       - application/json
       parameters:
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/DeleteLoadProgramsByTenantIdAndClientIdRequest'
       - name: clientId
         in: header
         required: true
@@ -208,6 +202,12 @@ paths:
         required: true
         type: string
         description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/DeleteLoadProgramsByTenantIdAndClientIdRequest'
       responses:
         200:
           description: ''
@@ -217,9 +217,9 @@ paths:
           method: DELETE
           uri: /v1/loanprograms/6
           headers:
-            Content-Type: application/json
             clientId: 10
             tenantId: 10
+            Content-Type: application/json
           body: '{"programId":"2","programName":"Loan Program 2"}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -247,12 +247,6 @@ paths:
       produces:
       - application/json
       parameters:
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/PatchLoadProgramsByTenantIdAndClientIdRequest'
       - name: clientId
         in: header
         required: true
@@ -268,6 +262,12 @@ paths:
         required: true
         type: string
         description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/PatchLoadProgramsByTenantIdAndClientIdRequest'
       responses:
         200:
           description: ''
@@ -277,9 +277,9 @@ paths:
           method: PATCH
           uri: /v1/loanprograms/2
           headers:
-            Content-Type: application/json
             clientId: 10
             tenantId: 10
+            Content-Type: application/json
           body: '{"programName":"Loan Program 2.1"}'
         expectedResponse:
           x-allowExtraHeaders: true
