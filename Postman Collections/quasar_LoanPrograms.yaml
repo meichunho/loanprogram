@@ -1,137 +1,1225 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>APIMATIC - Login</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    
-    
-
-    
-
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.css" rel="stylesheet" />
-<link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.min.css"
-          integrity="sha256-nVXk5aDYc/D4r9OoqxZ5H6vpIAqAG5BhVuIdOihDN1c="
-          crossorigin="anonymous" />
-<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-
-<link href="/bundles/front-css?v=11O7jOwdtFxvmVBTuhI4jW7gL4oZccYpht3O4dmVJC41" rel="stylesheet"/>
-
-    <link href="/bundles/onboarding-css?v=m1CDG8GUR5u_P3QvyzJOWHlZKrHcnVPf442vvOhB4h41" rel="stylesheet"/>
-
-
-    
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-
-    <!-- FAVICON START -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <!-- FAVICON END -->
-
-</head>
-<body>
-    <div class="container onboarding-container">
-            <div class="onboarding-container-centered ">
-                
-
-
-
-<header class="flex flex-col align-center">
-    <div class="icon">
-        <a href="/">
-            <img class="mx-auto d-block" alt="APIMATIC logo" title="Welcome to APIMATIC" src="/imgs/apimatic-logo.svg" />
-        </a>
-    </div>
-    <div class="content">
-        <p>Login to your account</p>
-    </div>
-
-</header>
-<section class="form-wrapper flex flex-col">
-
-<form action="/account/login?ReturnUrl=%2Fapi%2Ftransform%3Fformat%3Dswaggeryaml%26apikey%3DmONZg6E9hVHp7-WXsHucCGl-lXLvzN0t9GGEQ_s1xgrILHdXq_d50wEd8ptizzQN" id="loginForm" method="post" novalidate="True" role="form"><input name="__RequestVerificationToken" type="hidden" value="Gzg1VF4v_y-TqAvDcJbZ0ssX5lCJOW6z8_GulO_SAE0HIon0TgpL6zYKouorRI5XoE9JonTdoewPB5VyHcN9dlbaDH9Hurg_XxvvcKS67LU1" /><div class="validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
-</ul></div>        <div class="form-group">
-            <label class="mb-1" for="signInInputEmail1">
-                Email
-            </label>
-            <input class="form-control form-control-sm" data-Validation="email" data-val="true" data-val-email="The Email Address field is not a valid e-mail address." data-val-required="Email is required" id="Email" name="Email" placeholder="Enter email here" required="required" tabindex="2" type="email" value="" />
-
-        </div>
-        <div class="form-group mb-0">
-            <label class="mb-1" for="signInInputPassword">
-                Password
-            </label>
-            <a class="forgot-password" href="/account/forgotpassword?Length=7">Forgot password?</a>
-            <input class="form-control extra-padding-right" data-title="Caps lock is on" data-toggle="tooltip" data-trigger="manual" data-val="true" data-val-required="Password is required" id="js-onboarding-password-field" name="Password" placeholder="Password" required="true" type="password" />
-            <i class="fa fa-eye onboarding-show-password-icon" id="js-onboarding-show-password-icon"></i>
-        </div>
-        <div class="checkbox">
-            <label>
-                <input class="custom-control-input" data-val="true" data-val-required="The Remember me? field is required." id="customControlInline" name="RememberMe" tabindex="4" type="checkbox" value="true" /><input name="RememberMe" type="hidden" value="false" />
-                Remember me
-            </label>
-        </div>
-        <button type="submit" class="btn btn-primary btn-sm btn-block" tabindex="5">
-            Login
-        </button>
-        <a href="/account/register" class="btn btn-white btn-sm btn-block" tabindex="6">
-            Sign Up
-        </a>
-</form></section>
-
-            </div>
-    </div>
-</body>
-</html>
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.js"></script>
-
-<script src="https://cdn.rawgit.com/zenorocha/clipboard.js/master/dist/clipboard.min.js"></script>
-
-<script src="/bundles/front-js?v="></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
-<script>
-    $.validate({
-        modules: 'date, security'
-    });
-</script>
-<script src="/bundles/onboarding-js?v=2h6We__p_84-tByynY6kDWiE-iuM8Pigjw1rycnNaQY1"></script>
-
-
-
+swagger: '2.0'
+info:
+  version: '1.0'
+  title: quasar LoanPrograms
+  description: 'TODO: Add Description'
+  contact: {}
+host: quasarloanprograms.us-west-2.elasticbeanstalk.com
+basePath: /
+schemes:
+- http
+consumes:
+- application/json
+produces:
+- application/json
+paths:
+  /v1/loanprograms:
+    get:
+      description: 'TODO: Add Description'
+      summary: GetLoadProgramsByTenantIdAndClientId
+      tags:
+      - LoanPrograms v1
+      operationId: V1LoanprogramsGet
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: clientId
+        in: header
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      - name: tenantId
+        in: header
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetLoadProgramsByTenantIdAndClientId'
+          examples:
+            application/json:
+              rowCount: 3
+              data:
+              - ProgramId: 2
+                ProgramName: Loan Program 2.1
+                ProgramType: 
+                BaseRate: 
+                RateChangeFrequency: 
+                InterestAccrualMethod: 
+                IsActive: 0
+              - ProgramId: 4
+                ProgramName: Loan Program 4
+                ProgramType: 
+                BaseRate: 
+                RateChangeFrequency: 
+                InterestAccrualMethod: 
+                IsActive: 0
+              - ProgramId: 6
+                ProgramName: Rustic Granite Pizza 6.1
+                ProgramType: 
+                BaseRate: 
+                RateChangeFrequency: 
+                InterestAccrualMethod: 
+                IsActive: 1
+              statusDescription: OK
+              statusCode: 200
+          headers:
+            connection:
+              type: string
+              default: keep-alive
+            content-encoding:
+              type: string
+              default: gzip
+            content-length:
+              type: string
+              default: 212
+            content-type:
+              type: string
+              default: application/json; charset=utf-8
+            date:
+              type: string
+              default: Mon, 18 Sep 2017 21:55:34 GMT
+            etag:
+              type: string
+              default: W/"212-ePTlCSn71q1O/WzYdbAeNkMYdUs"
+            server:
+              type: string
+              default: nginx/1.10.2
+            x-powered-by:
+              type: string
+              default: Express
+    post:
+      description: 'TODO: Add Description'
+      summary: PostLoadProgramsByTenantIdAndClientId
+      tags:
+      - LoanPrograms v1
+      operationId: V1LoanprogramsPost
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: clientId
+        in: header
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      - name: tenantId
+        in: header
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/PostLoadProgramsByTenantIdAndClientIdRequest'
+      responses:
+        200:
+          description: ''
+          headers: {}
+  /v1/loanprograms/6:
+    put:
+      description: 'TODO: Add Description'
+      summary: PutLoadProgramsByTenantIdAndClientId
+      tags:
+      - LoanPrograms v1
+      operationId: V1Loanprograms6Put
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: clientId
+        in: header
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      - name: tenantId
+        in: header
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/PutLoadProgramsByTenantIdAndClientIdRequest'
+      responses:
+        200:
+          description: ''
+          headers: {}
+    delete:
+      description: 'TODO: Add Description'
+      summary: DeleteLoadProgramsByTenantIdAndClientId
+      tags:
+      - LoanPrograms v1
+      operationId: V1Loanprograms6Delete
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: clientId
+        in: header
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      - name: tenantId
+        in: header
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/DeleteLoadProgramsByTenantIdAndClientIdRequest'
+      responses:
+        200:
+          description: ''
+          headers: {}
+  /v1/loanprograms/2:
+    patch:
+      description: 'TODO: Add Description'
+      summary: PatchLoadProgramsByTenantIdAndClientId
+      tags:
+      - LoanPrograms v1
+      operationId: V1Loanprograms2Patch
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: clientId
+        in: header
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      - name: tenantId
+        in: header
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/PatchLoadProgramsByTenantIdAndClientIdRequest'
+      responses:
+        200:
+          description: ''
+          headers: {}
+  /v1/loanprogramtemplates:
+    get:
+      description: Get All Loan Program Templates
+      summary: Get All Loan Program Templates
+      tags:
+      - Loan Programs Template v1
+      operationId: V1LoanprogramtemplatesGet
+      deprecated: false
+      produces:
+      - application/json
+      parameters: []
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/GetAllLoanProgramTemplates'
+          examples:
+            application/json:
+              data:
+              - CreatedDate: 2017-09-15
+                Settings:
+                  PaymentApplication:
+                    Order: Fees/Interest/Principal
+                    AllowPaidAhead: No
+                  ReduceTerm:
+                    Statuses:
+                    - Status: Repayment
+                    - Status: MilitaryRepayment
+                    - Status: Bankruptcy
+                    - Status: Claim
+                    - Status: HardshipForbearance
+                  Fees:
+                    NSF:
+                      PercentOrDollar: Amount
+                      Minimum: 0
+                      Maximum: 0
+                      Amount: 20
+                    Late:
+                      PercentOrDollar: Percent
+                      Minimum: 0
+                      Maximum: 9999.9899999999998
+                      DaysLate: 15
+                      Statuses:
+                      - Status: Repayment
+                      - Status: Bankruptcy
+                      - Status: Claim
+                      Amount: 5
+                  InterestAccrual:
+                    Statuses:
+                    - Status: Repayment
+                      AutoPayIncentive: 0.25
+                    - Status: MilitaryRepayment
+                      AutoPayIncentive: 0.25
+                      MaxRate: 6
+                    - Status: Bankruptcy
+                    - Status: Claim
+                    - Status: Default
+                    - Status: HardshipForbearance
+                    - Status: DisasterForbearance
+                    Frequency: Monthly
+                    Method: Actual/Actual
+                  Billing:
+                    Statuses:
+                    - Status: Repayment
+                    - Status: MilitaryRepayment
+                    - Status: HardshipForbearance
+                    - Status: DisasterForbearance
+                    Frequency: Monthly
+                    Days: 21
+                UpdatedDate: 2017-9-15
+                TemplateName: KristinTest2
+                Version: 1.0
+                IsActive: true
+                Description: This is an updated template for Kristin
+                Id: KristinTest
+              - UpdatedDate: 2017-09-15 10:25:19.147
+                CreatedDate: 2017-09-15 10:25:19.147
+                Settings:
+                  PaymentApplication:
+                    Order: Fees/Interest/Principal
+                    AllowPaidAhead: No
+                  ReduceTerm:
+                    Statuses:
+                    - Status: Repayment
+                    - Status: MilitaryRepayment
+                    - Status: Bankruptcy
+                    - Status: Claim
+                    - Status: HardshipForbearance
+                  Fees:
+                    NSF:
+                      PercentOrDollar: Amount
+                      Minimum: 0
+                      Maximum: 0
+                      Amount: 20
+                    Late:
+                      PercentOrDollar: Percent
+                      Minimum: 0
+                      Maximum: 9999.9899999999998
+                      DaysLate: 15
+                      Statuses:
+                      - Status: Repayment
+                      - Status: Bankruptcy
+                      - Status: Claim
+                      Amount: 5
+                  InterestAccrual:
+                    Statuses:
+                    - Status: Repayment
+                      AutoPayIncentive: 0.25
+                    - Status: MilitaryRepayment
+                      MaxRate: 6
+                      AutoPayIncentive: 0.25
+                    - Status: Bankruptcy
+                    - Status: Claim
+                    - Status: Default
+                    - Status: HardshipForbearance
+                    - Status: DisasterForbearance
+                    Frequency: Monthly
+                    Method: Actual/Actual
+                  Billing:
+                    Statuses:
+                    - Status: Repayment
+                    - Status: MilitaryRepayment
+                    - Status: HardshipForbearance
+                    - Status: DisasterForbearance
+                    Frequency: Monthly
+                    Days: 21
+                Version: 1.0
+                TemplateName: BasePersonalFixed
+                IsActive: true
+                Description: BasePersonalFixed
+                Id: 9d90a944-438a-4763-9d25-f60ec33bf4f3
+              - UpdatedDate: 2017-09-15 10:28:19.147
+                CreatedDate: 2017-09-15 10:28:19.147
+                Settings:
+                  PaymentApplication:
+                    Order: Fees/Interest/Principal
+                    AllowPaidAhead: No
+                  ReduceTerm:
+                    Statuses:
+                    - Status: Repayment
+                    - Status: MilitaryRepayment
+                    - Status: Bankruptcy
+                    - Status: Claim
+                    - Status: HardshipForbearance
+                  Fees:
+                    NSF:
+                      PercentOrDollar: Amount
+                      Minimum: 0
+                      Maximum: 0
+                      Amount: 20
+                    Late:
+                      PercentOrDollar: Percent
+                      Minimum: 0
+                      Maximum: 9999.9899999999998
+                      DaysLate: 15
+                      Statuses:
+                      - Status: Repayment
+                      - Status: Bankruptcy
+                      - Status: Claim
+                      Amount: 5
+                  InterestAccrual:
+                    Statuses:
+                    - Status: Repayment
+                      AutoPayIncentive: 0.25
+                    - Status: MilitaryRepayment
+                      MaxRate: 6
+                      AutoPayIncentive: 0.25
+                    - Status: Bankruptcy
+                    - Status: Claim
+                    - Status: Default
+                    - Status: HardshipForbearance
+                    - Status: DisasterForbearance
+                    Frequency: Monthly
+                    Method: Actual/Actual
+                  Billing:
+                    Statuses:
+                    - Status: Repayment
+                    - Status: MilitaryRepayment
+                    - Status: HardshipForbearance
+                    - Status: DisasterForbearance
+                    Frequency: Monthly
+                    Days: 21
+                Version: 1.0
+                TemplateName: BasePersonal Variable
+                IsActive: true
+                Description: BasePersonalFixed
+                Id: 8db8875c-3396-4c64-baac-e4a77436b9c8
+              statusDescription: OK
+              statusCode: 200
+          headers:
+            content-encoding:
+              type: string
+              default: gzip
+            content-length:
+              type: string
+              default: 681
+            content-type:
+              type: string
+              default: application/json; charset=utf-8
+            date:
+              type: string
+              default: Mon, 18 Sep 2017 22:04:18 GMT
+            etag:
+              type: string
+              default: W/"e7c-vUPOBXXej+UKhOmIGuWRGXaQQVA"
+            server:
+              type: string
+              default: nginx/1.10.2
+            x-powered-by:
+              type: string
+              default: Express
+  /v1/loanprogramtemplates/BasePersonal Variable1:
+    get:
+      description: Get All Loan Program Templates by Template Name
+      summary: Get All Loan Program Templates by Template Name
+      tags:
+      - Loan Programs Template v1
+      operationId: V1LoanprogramtemplatesBasePersonalVariable1Get
+      deprecated: false
+      produces:
+      - application/json
+      parameters: []
+      responses:
+        200:
+          description: ''
+          headers: {}
+  /v2/loanprograms:
+    get:
+      description: Get Client Specific Templates
+      summary: Get Client Specific Templates
+      tags:
+      - Loan Program v2
+      operationId: V2LoanprogramsGet
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: tenantid
+        in: header
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      - name: clientid
+        in: header
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      responses:
+        200:
+          description: ''
+          headers: {}
+  /v2/loanprograms/BasePersonalFixed:
+    get:
+      description: Get Client Specific Templates by Template Name
+      summary: Get Client Specific Templates by Template Name
+      tags:
+      - Loan Program v2
+      operationId: V2LoanprogramsBasePersonalFixedGet
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: tenantid
+        in: header
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      - name: clientid
+        in: header
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      responses:
+        200:
+          description: ''
+          headers: {}
+definitions:
+  GetLoadProgramsByTenantIdAndClientId:
+    title: GetLoadProgramsByTenantIdAndClientId
+    example:
+      rowCount: 3
+      data:
+      - ProgramId: 2
+        ProgramName: Loan Program 2.1
+        ProgramType: 
+        BaseRate: 
+        RateChangeFrequency: 
+        InterestAccrualMethod: 
+        IsActive: 0
+      - ProgramId: 4
+        ProgramName: Loan Program 4
+        ProgramType: 
+        BaseRate: 
+        RateChangeFrequency: 
+        InterestAccrualMethod: 
+        IsActive: 0
+      - ProgramId: 6
+        ProgramName: Rustic Granite Pizza 6.1
+        ProgramType: 
+        BaseRate: 
+        RateChangeFrequency: 
+        InterestAccrualMethod: 
+        IsActive: 1
+      statusDescription: OK
+      statusCode: 200
+    type: object
+    properties:
+      rowCount:
+        type: integer
+        format: int32
+      data:
+        type: array
+        items:
+          $ref: '#/definitions/Datum'
+      statusDescription:
+        type: string
+      statusCode:
+        type: integer
+        format: int32
+    required:
+    - rowCount
+    - data
+    - statusDescription
+    - statusCode
+  Datum:
+    title: Datum
+    example:
+      ProgramId: 2
+      ProgramName: Loan Program 2.1
+      ProgramType: 
+      BaseRate: 
+      RateChangeFrequency: 
+      InterestAccrualMethod: 
+      IsActive: 0
+    type: object
+    properties:
+      ProgramId:
+        type: integer
+        format: int32
+      ProgramName:
+        type: string
+      ProgramType:
+        type: string
+      BaseRate:
+        type: string
+      RateChangeFrequency:
+        type: string
+      InterestAccrualMethod:
+        type: string
+      IsActive:
+        type: integer
+        format: int32
+    required:
+    - ProgramId
+    - ProgramName
+    - ProgramType
+    - BaseRate
+    - RateChangeFrequency
+    - InterestAccrualMethod
+    - IsActive
+  PostLoadProgramsByTenantIdAndClientIdRequest:
+    title: PostLoadProgramsByTenantIdAndClientIdRequest
+    example:
+      programId: 6
+      programName: Rustic Granite Pizza 6
+      isActive: 1
+    type: object
+    properties:
+      programId:
+        type: integer
+        format: int32
+      programName:
+        type: string
+      isActive:
+        type: integer
+        format: int32
+    required:
+    - programId
+    - programName
+    - isActive
+  PutLoadProgramsByTenantIdAndClientIdRequest:
+    title: PutLoadProgramsByTenantIdAndClientIdRequest
+    example:
+      programId: 6
+      programName: Rustic Granite Pizza 6.1
+      isActive: 1
+    type: object
+    properties:
+      programId:
+        type: integer
+        format: int32
+      programName:
+        type: string
+      isActive:
+        type: integer
+        format: int32
+    required:
+    - programId
+    - programName
+    - isActive
+  DeleteLoadProgramsByTenantIdAndClientIdRequest:
+    title: DeleteLoadProgramsByTenantIdAndClientIdRequest
+    example:
+      programId: 2
+      programName: Loan Program 2
+    type: object
+    properties:
+      programId:
+        type: string
+      programName:
+        type: string
+    required:
+    - programId
+    - programName
+  PatchLoadProgramsByTenantIdAndClientIdRequest:
+    title: PatchLoadProgramsByTenantIdAndClientIdRequest
+    example:
+      programName: Loan Program 2.1
+    type: object
+    properties:
+      programName:
+        type: string
+    required:
+    - programName
+  GetAllLoanProgramTemplates:
+    title: GetAllLoanProgramTemplates
+    example:
+      data:
+      - CreatedDate: 2017-09-15
+        Settings:
+          PaymentApplication:
+            Order: Fees/Interest/Principal
+            AllowPaidAhead: No
+          ReduceTerm:
+            Statuses:
+            - Status: Repayment
+            - Status: MilitaryRepayment
+            - Status: Bankruptcy
+            - Status: Claim
+            - Status: HardshipForbearance
+          Fees:
+            NSF:
+              PercentOrDollar: Amount
+              Minimum: 0
+              Maximum: 0
+              Amount: 20
+            Late:
+              PercentOrDollar: Percent
+              Minimum: 0
+              Maximum: 9999.9899999999998
+              DaysLate: 15
+              Statuses:
+              - Status: Repayment
+              - Status: Bankruptcy
+              - Status: Claim
+              Amount: 5
+          InterestAccrual:
+            Statuses:
+            - Status: Repayment
+              AutoPayIncentive: 0.25
+            - Status: MilitaryRepayment
+              AutoPayIncentive: 0.25
+              MaxRate: 6
+            - Status: Bankruptcy
+            - Status: Claim
+            - Status: Default
+            - Status: HardshipForbearance
+            - Status: DisasterForbearance
+            Frequency: Monthly
+            Method: Actual/Actual
+          Billing:
+            Statuses:
+            - Status: Repayment
+            - Status: MilitaryRepayment
+            - Status: HardshipForbearance
+            - Status: DisasterForbearance
+            Frequency: Monthly
+            Days: 21
+        UpdatedDate: 2017-9-15
+        TemplateName: KristinTest2
+        Version: 1.0
+        IsActive: true
+        Description: This is an updated template for Kristin
+        Id: KristinTest
+      - UpdatedDate: 2017-09-15 10:25:19.147
+        CreatedDate: 2017-09-15 10:25:19.147
+        Settings:
+          PaymentApplication:
+            Order: Fees/Interest/Principal
+            AllowPaidAhead: No
+          ReduceTerm:
+            Statuses:
+            - Status: Repayment
+            - Status: MilitaryRepayment
+            - Status: Bankruptcy
+            - Status: Claim
+            - Status: HardshipForbearance
+          Fees:
+            NSF:
+              PercentOrDollar: Amount
+              Minimum: 0
+              Maximum: 0
+              Amount: 20
+            Late:
+              PercentOrDollar: Percent
+              Minimum: 0
+              Maximum: 9999.9899999999998
+              DaysLate: 15
+              Statuses:
+              - Status: Repayment
+              - Status: Bankruptcy
+              - Status: Claim
+              Amount: 5
+          InterestAccrual:
+            Statuses:
+            - Status: Repayment
+              AutoPayIncentive: 0.25
+            - Status: MilitaryRepayment
+              MaxRate: 6
+              AutoPayIncentive: 0.25
+            - Status: Bankruptcy
+            - Status: Claim
+            - Status: Default
+            - Status: HardshipForbearance
+            - Status: DisasterForbearance
+            Frequency: Monthly
+            Method: Actual/Actual
+          Billing:
+            Statuses:
+            - Status: Repayment
+            - Status: MilitaryRepayment
+            - Status: HardshipForbearance
+            - Status: DisasterForbearance
+            Frequency: Monthly
+            Days: 21
+        Version: 1.0
+        TemplateName: BasePersonalFixed
+        IsActive: true
+        Description: BasePersonalFixed
+        Id: 9d90a944-438a-4763-9d25-f60ec33bf4f3
+      - UpdatedDate: 2017-09-15 10:28:19.147
+        CreatedDate: 2017-09-15 10:28:19.147
+        Settings:
+          PaymentApplication:
+            Order: Fees/Interest/Principal
+            AllowPaidAhead: No
+          ReduceTerm:
+            Statuses:
+            - Status: Repayment
+            - Status: MilitaryRepayment
+            - Status: Bankruptcy
+            - Status: Claim
+            - Status: HardshipForbearance
+          Fees:
+            NSF:
+              PercentOrDollar: Amount
+              Minimum: 0
+              Maximum: 0
+              Amount: 20
+            Late:
+              PercentOrDollar: Percent
+              Minimum: 0
+              Maximum: 9999.9899999999998
+              DaysLate: 15
+              Statuses:
+              - Status: Repayment
+              - Status: Bankruptcy
+              - Status: Claim
+              Amount: 5
+          InterestAccrual:
+            Statuses:
+            - Status: Repayment
+              AutoPayIncentive: 0.25
+            - Status: MilitaryRepayment
+              MaxRate: 6
+              AutoPayIncentive: 0.25
+            - Status: Bankruptcy
+            - Status: Claim
+            - Status: Default
+            - Status: HardshipForbearance
+            - Status: DisasterForbearance
+            Frequency: Monthly
+            Method: Actual/Actual
+          Billing:
+            Statuses:
+            - Status: Repayment
+            - Status: MilitaryRepayment
+            - Status: HardshipForbearance
+            - Status: DisasterForbearance
+            Frequency: Monthly
+            Days: 21
+        Version: 1.0
+        TemplateName: BasePersonal Variable
+        IsActive: true
+        Description: BasePersonalFixed
+        Id: 8db8875c-3396-4c64-baac-e4a77436b9c8
+      statusDescription: OK
+      statusCode: 200
+    type: object
+    properties:
+      data:
+        type: array
+        items:
+          $ref: '#/definitions/Datum1'
+      statusDescription:
+        type: string
+      statusCode:
+        type: integer
+        format: int32
+    required:
+    - data
+    - statusDescription
+    - statusCode
+  Datum1:
+    title: Datum1
+    example:
+      CreatedDate: 2017-09-15
+      Settings:
+        PaymentApplication:
+          Order: Fees/Interest/Principal
+          AllowPaidAhead: No
+        ReduceTerm:
+          Statuses:
+          - Status: Repayment
+          - Status: MilitaryRepayment
+          - Status: Bankruptcy
+          - Status: Claim
+          - Status: HardshipForbearance
+        Fees:
+          NSF:
+            PercentOrDollar: Amount
+            Minimum: 0
+            Maximum: 0
+            Amount: 20
+          Late:
+            PercentOrDollar: Percent
+            Minimum: 0
+            Maximum: 9999.9899999999998
+            DaysLate: 15
+            Statuses:
+            - Status: Repayment
+            - Status: Bankruptcy
+            - Status: Claim
+            Amount: 5
+        InterestAccrual:
+          Statuses:
+          - Status: Repayment
+            AutoPayIncentive: 0.25
+          - Status: MilitaryRepayment
+            AutoPayIncentive: 0.25
+            MaxRate: 6
+          - Status: Bankruptcy
+          - Status: Claim
+          - Status: Default
+          - Status: HardshipForbearance
+          - Status: DisasterForbearance
+          Frequency: Monthly
+          Method: Actual/Actual
+        Billing:
+          Statuses:
+          - Status: Repayment
+          - Status: MilitaryRepayment
+          - Status: HardshipForbearance
+          - Status: DisasterForbearance
+          Frequency: Monthly
+          Days: 21
+      UpdatedDate: 2017-9-15
+      TemplateName: KristinTest2
+      Version: 1.0
+      IsActive: true
+      Description: This is an updated template for Kristin
+      Id: KristinTest
+    type: object
+    properties:
+      CreatedDate:
+        type: string
+      Settings:
+        $ref: '#/definitions/Settings'
+      UpdatedDate:
+        type: string
+      TemplateName:
+        type: string
+      Version:
+        type: string
+      IsActive:
+        type: boolean
+      Description:
+        type: string
+      Id:
+        type: string
+    required:
+    - CreatedDate
+    - Settings
+    - UpdatedDate
+    - TemplateName
+    - Version
+    - IsActive
+    - Description
+    - Id
+  Settings:
+    title: Settings
+    example:
+      PaymentApplication:
+        Order: Fees/Interest/Principal
+        AllowPaidAhead: No
+      ReduceTerm:
+        Statuses:
+        - Status: Repayment
+        - Status: MilitaryRepayment
+        - Status: Bankruptcy
+        - Status: Claim
+        - Status: HardshipForbearance
+      Fees:
+        NSF:
+          PercentOrDollar: Amount
+          Minimum: 0
+          Maximum: 0
+          Amount: 20
+        Late:
+          PercentOrDollar: Percent
+          Minimum: 0
+          Maximum: 9999.9899999999998
+          DaysLate: 15
+          Statuses:
+          - Status: Repayment
+          - Status: Bankruptcy
+          - Status: Claim
+          Amount: 5
+      InterestAccrual:
+        Statuses:
+        - Status: Repayment
+          AutoPayIncentive: 0.25
+        - Status: MilitaryRepayment
+          AutoPayIncentive: 0.25
+          MaxRate: 6
+        - Status: Bankruptcy
+        - Status: Claim
+        - Status: Default
+        - Status: HardshipForbearance
+        - Status: DisasterForbearance
+        Frequency: Monthly
+        Method: Actual/Actual
+      Billing:
+        Statuses:
+        - Status: Repayment
+        - Status: MilitaryRepayment
+        - Status: HardshipForbearance
+        - Status: DisasterForbearance
+        Frequency: Monthly
+        Days: 21
+    type: object
+    properties:
+      PaymentApplication:
+        $ref: '#/definitions/PaymentApplication'
+      ReduceTerm:
+        $ref: '#/definitions/ReduceTerm'
+      Fees:
+        $ref: '#/definitions/Fees'
+      InterestAccrual:
+        $ref: '#/definitions/InterestAccrual'
+      Billing:
+        $ref: '#/definitions/Billing'
+    required:
+    - PaymentApplication
+    - ReduceTerm
+    - Fees
+    - InterestAccrual
+    - Billing
+  PaymentApplication:
+    title: PaymentApplication
+    example:
+      Order: Fees/Interest/Principal
+      AllowPaidAhead: No
+    type: object
+    properties:
+      Order:
+        type: string
+      AllowPaidAhead:
+        type: string
+    required:
+    - Order
+    - AllowPaidAhead
+  ReduceTerm:
+    title: ReduceTerm
+    example:
+      Statuses:
+      - Status: Repayment
+      - Status: MilitaryRepayment
+      - Status: Bankruptcy
+      - Status: Claim
+      - Status: HardshipForbearance
+    type: object
+    properties:
+      Statuses:
+        type: array
+        items:
+          $ref: '#/definitions/Status'
+    required:
+    - Statuses
+  Status:
+    title: Status
+    example:
+      Status: Repayment
+    type: object
+    properties:
+      Status:
+        type: string
+    required:
+    - Status
+  Fees:
+    title: Fees
+    example:
+      NSF:
+        PercentOrDollar: Amount
+        Minimum: 0
+        Maximum: 0
+        Amount: 20
+      Late:
+        PercentOrDollar: Percent
+        Minimum: 0
+        Maximum: 9999.9899999999998
+        DaysLate: 15
+        Statuses:
+        - Status: Repayment
+        - Status: Bankruptcy
+        - Status: Claim
+        Amount: 5
+    type: object
+    properties:
+      NSF:
+        $ref: '#/definitions/NSF'
+      Late:
+        $ref: '#/definitions/Late'
+    required:
+    - NSF
+    - Late
+  NSF:
+    title: NSF
+    example:
+      PercentOrDollar: Amount
+      Minimum: 0
+      Maximum: 0
+      Amount: 20
+    type: object
+    properties:
+      PercentOrDollar:
+        type: string
+      Minimum:
+        type: integer
+        format: int32
+      Maximum:
+        type: integer
+        format: int32
+      Amount:
+        type: integer
+        format: int32
+    required:
+    - PercentOrDollar
+    - Minimum
+    - Maximum
+    - Amount
+  Late:
+    title: Late
+    example:
+      PercentOrDollar: Percent
+      Minimum: 0
+      Maximum: 9999.9899999999998
+      DaysLate: 15
+      Statuses:
+      - Status: Repayment
+      - Status: Bankruptcy
+      - Status: Claim
+      Amount: 5
+    type: object
+    properties:
+      PercentOrDollar:
+        type: string
+      Minimum:
+        type: integer
+        format: int32
+      Maximum:
+        type: number
+        format: double
+      DaysLate:
+        type: integer
+        format: int32
+      Statuses:
+        type: array
+        items:
+          $ref: '#/definitions/Status'
+      Amount:
+        type: integer
+        format: int32
+    required:
+    - PercentOrDollar
+    - Minimum
+    - Maximum
+    - DaysLate
+    - Statuses
+    - Amount
+  InterestAccrual:
+    title: InterestAccrual
+    example:
+      Statuses:
+      - Status: Repayment
+        AutoPayIncentive: 0.25
+      - Status: MilitaryRepayment
+        AutoPayIncentive: 0.25
+        MaxRate: 6
+      - Status: Bankruptcy
+      - Status: Claim
+      - Status: Default
+      - Status: HardshipForbearance
+      - Status: DisasterForbearance
+      Frequency: Monthly
+      Method: Actual/Actual
+    type: object
+    properties:
+      Statuses:
+        type: array
+        items:
+          $ref: '#/definitions/Status2'
+      Frequency:
+        type: string
+      Method:
+        type: string
+    required:
+    - Statuses
+    - Frequency
+    - Method
+  Status2:
+    title: Status2
+    example:
+      Status: Repayment
+      AutoPayIncentive: 0.25
+    type: object
+    properties:
+      Status:
+        type: string
+      AutoPayIncentive:
+        type: number
+        format: double
+      MaxRate:
+        type: integer
+        format: int32
+    required:
+    - Status
+  Billing:
+    title: Billing
+    example:
+      Statuses:
+      - Status: Repayment
+      - Status: MilitaryRepayment
+      - Status: HardshipForbearance
+      - Status: DisasterForbearance
+      Frequency: Monthly
+      Days: 21
+    type: object
+    properties:
+      Statuses:
+        type: array
+        items:
+          $ref: '#/definitions/Status'
+      Frequency:
+        type: string
+      Days:
+        type: integer
+        format: int32
+    required:
+    - Statuses
+    - Frequency
+    - Days
+tags:
+- name: LoanPrograms v1
+- name: Loan Programs Template v1
+- name: Loan Program v2
