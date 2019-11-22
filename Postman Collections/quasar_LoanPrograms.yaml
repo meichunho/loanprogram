@@ -19,7 +19,7 @@ paths:
       summary: GetLoadProgramsByTenantIdAndClientId
       tags:
       - LoanPrograms v1
-      operationId: V1LoanprogramsGet
+      operationId: GetLoadProgramsByTenantIdAndClientId
       deprecated: false
       produces:
       - application/json
@@ -98,7 +98,7 @@ paths:
       summary: PostLoadProgramsByTenantIdAndClientId
       tags:
       - LoanPrograms v1
-      operationId: V1LoanprogramsPost
+      operationId: PostLoadProgramsByTenantIdAndClientId
       deprecated: false
       produces:
       - application/json
@@ -136,7 +136,7 @@ paths:
       summary: PutLoadProgramsByTenantIdAndClientId
       tags:
       - LoanPrograms v1
-      operationId: V1Loanprograms6Put
+      operationId: PutLoadProgramsByTenantIdAndClientId
       deprecated: false
       produces:
       - application/json
@@ -173,7 +173,7 @@ paths:
       summary: DeleteLoadProgramsByTenantIdAndClientId
       tags:
       - LoanPrograms v1
-      operationId: V1Loanprograms6Delete
+      operationId: DeleteLoadProgramsByTenantIdAndClientId
       deprecated: false
       produces:
       - application/json
@@ -211,7 +211,7 @@ paths:
       summary: PatchLoadProgramsByTenantIdAndClientId
       tags:
       - LoanPrograms v1
-      operationId: V1Loanprograms2Patch
+      operationId: PatchLoadProgramsByTenantIdAndClientId
       deprecated: false
       produces:
       - application/json
@@ -249,7 +249,7 @@ paths:
       summary: Get All Loan Program Templates
       tags:
       - Loan Programs Template v1
-      operationId: V1LoanprogramtemplatesGet
+      operationId: GetAllLoanProgramTemplates
       deprecated: false
       produces:
       - application/json
@@ -460,7 +460,7 @@ paths:
       summary: Get All Loan Program Templates by Template Name
       tags:
       - Loan Programs Template v1
-      operationId: V1LoanprogramtemplatesBasePersonalVariable1Get
+      operationId: GetAllLoanProgramTemplatesbyTemplateName
       deprecated: false
       produces:
       - application/json
@@ -475,7 +475,7 @@ paths:
       summary: Get Client Specific Templates
       tags:
       - Loan Program v2
-      operationId: V2LoanprogramsGet
+      operationId: GetClientSpecificTemplates
       deprecated: false
       produces:
       - application/json
@@ -502,7 +502,7 @@ paths:
       summary: Get Client Specific Templates by Template Name
       tags:
       - Loan Program v2
-      operationId: V2LoanprogramsBasePersonalFixedGet
+      operationId: GetClientSpecificTemplatesbyTemplateName
       deprecated: false
       produces:
       - application/json
