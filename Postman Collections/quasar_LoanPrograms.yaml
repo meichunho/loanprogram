@@ -2,7 +2,6 @@ swagger: '2.0'
 info:
   version: '1.0'
   title: quasar LoanPrograms
-  description: 'TODO: Add Description'
   contact: {}
 host: quasarloanprograms.us-west-2.elasticbeanstalk.com
 basePath: /
@@ -15,7 +14,6 @@ produces:
 paths:
   /v1/loanprograms:
     get:
-      description: 'TODO: Add Description'
       summary: GetLoadProgramsByTenantIdAndClientId
       tags:
       - LoanPrograms v1
@@ -94,7 +92,6 @@ paths:
               type: string
               default: Express
     post:
-      description: 'TODO: Add Description'
       summary: PostLoadProgramsByTenantIdAndClientId
       tags:
       - LoanPrograms v1
@@ -132,7 +129,6 @@ paths:
           headers: {}
   /v1/loanprograms/6:
     put:
-      description: 'TODO: Add Description'
       summary: PutLoadProgramsByTenantIdAndClientId
       tags:
       - LoanPrograms v1
@@ -169,7 +165,6 @@ paths:
           description: ''
           headers: {}
     delete:
-      description: 'TODO: Add Description'
       summary: DeleteLoadProgramsByTenantIdAndClientId
       tags:
       - LoanPrograms v1
@@ -207,7 +202,6 @@ paths:
           headers: {}
   /v1/loanprograms/2:
     patch:
-      description: 'TODO: Add Description'
       summary: PatchLoadProgramsByTenantIdAndClientId
       tags:
       - LoanPrograms v1
