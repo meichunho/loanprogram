@@ -99,6 +99,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Content-Type
         in: header
@@ -136,6 +138,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: clientId
         in: header
@@ -171,6 +175,8 @@ paths:
       operationId: DeleteLoadProgramsByTenantIdAndClientId
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: clientId
@@ -208,6 +214,8 @@ paths:
       operationId: PatchLoadProgramsByTenantIdAndClientId
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: clientId
