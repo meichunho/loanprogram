@@ -36,7 +36,7 @@ paths:
         description: ''
       responses:
         200:
-          description: ''
+          description: OK
           schema:
             $ref: '#/definitions/GetLoadProgramsByTenantIdAndClientId'
           examples:
@@ -258,7 +258,7 @@ paths:
       parameters: []
       responses:
         200:
-          description: ''
+          description: OK
           schema:
             $ref: '#/definitions/GetAllLoanProgramTemplates'
           examples:
