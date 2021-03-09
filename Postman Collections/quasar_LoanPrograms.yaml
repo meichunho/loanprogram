@@ -45,24 +45,24 @@ paths:
               data:
               - ProgramId: 2
                 ProgramName: Loan Program 2.1
-                ProgramType: 
-                BaseRate: 
-                RateChangeFrequency: 
-                InterestAccrualMethod: 
+                ProgramType: ''
+                BaseRate: ''
+                RateChangeFrequency: ''
+                InterestAccrualMethod: ''
                 IsActive: 0
               - ProgramId: 4
                 ProgramName: Loan Program 4
-                ProgramType: 
-                BaseRate: 
-                RateChangeFrequency: 
-                InterestAccrualMethod: 
+                ProgramType: ''
+                BaseRate: ''
+                RateChangeFrequency: ''
+                InterestAccrualMethod: ''
                 IsActive: 0
               - ProgramId: 6
                 ProgramName: Rustic Granite Pizza 6.1
-                ProgramType: 
-                BaseRate: 
-                RateChangeFrequency: 
-                InterestAccrualMethod: 
+                ProgramType: ''
+                BaseRate: ''
+                RateChangeFrequency: ''
+                InterestAccrualMethod: ''
                 IsActive: 1
               statusDescription: OK
               statusCode: 200
@@ -75,7 +75,7 @@ paths:
               default: gzip
             content-length:
               type: string
-              default: 212
+              default: '212'
             content-type:
               type: string
               default: application/json; charset=utf-8
@@ -285,7 +285,7 @@ paths:
                     Late:
                       PercentOrDollar: Percent
                       Minimum: 0
-                      Maximum: 9999.9899999999998
+                      Maximum: 9999.99
                       DaysLate: 15
                       Statuses:
                       - Status: Repayment
@@ -316,7 +316,7 @@ paths:
                     Days: 21
                 UpdatedDate: 2017-9-15
                 TemplateName: KristinTest2
-                Version: 1.0
+                Version: '1.0'
                 IsActive: true
                 Description: This is an updated template for Kristin
                 Id: KristinTest
@@ -342,7 +342,7 @@ paths:
                     Late:
                       PercentOrDollar: Percent
                       Minimum: 0
-                      Maximum: 9999.9899999999998
+                      Maximum: 9999.99
                       DaysLate: 15
                       Statuses:
                       - Status: Repayment
@@ -371,7 +371,7 @@ paths:
                     - Status: DisasterForbearance
                     Frequency: Monthly
                     Days: 21
-                Version: 1.0
+                Version: '1.0'
                 TemplateName: BasePersonalFixed
                 IsActive: true
                 Description: BasePersonalFixed
@@ -398,7 +398,7 @@ paths:
                     Late:
                       PercentOrDollar: Percent
                       Minimum: 0
-                      Maximum: 9999.9899999999998
+                      Maximum: 9999.99
                       DaysLate: 15
                       Statuses:
                       - Status: Repayment
@@ -427,7 +427,7 @@ paths:
                     - Status: DisasterForbearance
                     Frequency: Monthly
                     Days: 21
-                Version: 1.0
+                Version: '1.0'
                 TemplateName: BasePersonal Variable
                 IsActive: true
                 Description: BasePersonalFixed
@@ -440,7 +440,7 @@ paths:
               default: gzip
             content-length:
               type: string
-              default: 681
+              default: '681'
             content-type:
               type: string
               default: application/json; charset=utf-8
@@ -533,24 +533,24 @@ definitions:
       data:
       - ProgramId: 2
         ProgramName: Loan Program 2.1
-        ProgramType: 
-        BaseRate: 
-        RateChangeFrequency: 
-        InterestAccrualMethod: 
+        ProgramType: ''
+        BaseRate: ''
+        RateChangeFrequency: ''
+        InterestAccrualMethod: ''
         IsActive: 0
       - ProgramId: 4
         ProgramName: Loan Program 4
-        ProgramType: 
-        BaseRate: 
-        RateChangeFrequency: 
-        InterestAccrualMethod: 
+        ProgramType: ''
+        BaseRate: ''
+        RateChangeFrequency: ''
+        InterestAccrualMethod: ''
         IsActive: 0
       - ProgramId: 6
         ProgramName: Rustic Granite Pizza 6.1
-        ProgramType: 
-        BaseRate: 
-        RateChangeFrequency: 
-        InterestAccrualMethod: 
+        ProgramType: ''
+        BaseRate: ''
+        RateChangeFrequency: ''
+        InterestAccrualMethod: ''
         IsActive: 1
       statusDescription: OK
       statusCode: 200
@@ -578,10 +578,10 @@ definitions:
     example:
       ProgramId: 2
       ProgramName: Loan Program 2.1
-      ProgramType: 
-      BaseRate: 
-      RateChangeFrequency: 
-      InterestAccrualMethod: 
+      ProgramType: ''
+      BaseRate: ''
+      RateChangeFrequency: ''
+      InterestAccrualMethod: ''
       IsActive: 0
     type: object
     properties:
@@ -652,7 +652,7 @@ definitions:
   DeleteLoadProgramsByTenantIdAndClientIdRequest:
     title: DeleteLoadProgramsByTenantIdAndClientIdRequest
     example:
-      programId: 2
+      programId: '2'
       programName: Loan Program 2
     type: object
     properties:
@@ -698,7 +698,7 @@ definitions:
             Late:
               PercentOrDollar: Percent
               Minimum: 0
-              Maximum: 9999.9899999999998
+              Maximum: 9999.99
               DaysLate: 15
               Statuses:
               - Status: Repayment
@@ -729,7 +729,7 @@ definitions:
             Days: 21
         UpdatedDate: 2017-9-15
         TemplateName: KristinTest2
-        Version: 1.0
+        Version: '1.0'
         IsActive: true
         Description: This is an updated template for Kristin
         Id: KristinTest
@@ -755,7 +755,7 @@ definitions:
             Late:
               PercentOrDollar: Percent
               Minimum: 0
-              Maximum: 9999.9899999999998
+              Maximum: 9999.99
               DaysLate: 15
               Statuses:
               - Status: Repayment
@@ -784,7 +784,7 @@ definitions:
             - Status: DisasterForbearance
             Frequency: Monthly
             Days: 21
-        Version: 1.0
+        Version: '1.0'
         TemplateName: BasePersonalFixed
         IsActive: true
         Description: BasePersonalFixed
@@ -811,7 +811,7 @@ definitions:
             Late:
               PercentOrDollar: Percent
               Minimum: 0
-              Maximum: 9999.9899999999998
+              Maximum: 9999.99
               DaysLate: 15
               Statuses:
               - Status: Repayment
@@ -840,7 +840,7 @@ definitions:
             - Status: DisasterForbearance
             Frequency: Monthly
             Days: 21
-        Version: 1.0
+        Version: '1.0'
         TemplateName: BasePersonal Variable
         IsActive: true
         Description: BasePersonalFixed
@@ -886,7 +886,7 @@ definitions:
           Late:
             PercentOrDollar: Percent
             Minimum: 0
-            Maximum: 9999.9899999999998
+            Maximum: 9999.99
             DaysLate: 15
             Statuses:
             - Status: Repayment
@@ -917,7 +917,7 @@ definitions:
           Days: 21
       UpdatedDate: 2017-9-15
       TemplateName: KristinTest2
-      Version: 1.0
+      Version: '1.0'
       IsActive: true
       Description: This is an updated template for Kristin
       Id: KristinTest
@@ -970,7 +970,7 @@ definitions:
         Late:
           PercentOrDollar: Percent
           Minimum: 0
-          Maximum: 9999.9899999999998
+          Maximum: 9999.99
           DaysLate: 15
           Statuses:
           - Status: Repayment
@@ -1069,7 +1069,7 @@ definitions:
       Late:
         PercentOrDollar: Percent
         Minimum: 0
-        Maximum: 9999.9899999999998
+        Maximum: 9999.99
         DaysLate: 15
         Statuses:
         - Status: Repayment
@@ -1115,7 +1115,7 @@ definitions:
     example:
       PercentOrDollar: Percent
       Minimum: 0
-      Maximum: 9999.9899999999998
+      Maximum: 9999.99
       DaysLate: 15
       Statuses:
       - Status: Repayment
