@@ -35,7 +35,7 @@ paths:
         format: int32
         description: ''
       responses:
-        200:
+        '200':
           description: OK
           schema:
             $ref: '#/definitions/GetLoadProgramsByTenantIdAndClientId'
@@ -126,7 +126,7 @@ paths:
         schema:
           $ref: '#/definitions/PostLoadProgramsByTenantIdAndClientIdRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /v1/loanprograms/6:
@@ -165,7 +165,7 @@ paths:
         schema:
           $ref: '#/definitions/PutLoadProgramsByTenantIdAndClientIdRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
     delete:
@@ -203,7 +203,7 @@ paths:
         schema:
           $ref: '#/definitions/DeleteLoadProgramsByTenantIdAndClientIdRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /v1/loanprograms/2:
@@ -242,7 +242,7 @@ paths:
         schema:
           $ref: '#/definitions/PatchLoadProgramsByTenantIdAndClientIdRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /v1/loanprogramtemplates:
@@ -257,7 +257,7 @@ paths:
       - application/json
       parameters: []
       responses:
-        200:
+        '200':
           description: OK
           schema:
             $ref: '#/definitions/GetAllLoanProgramTemplates'
@@ -468,7 +468,7 @@ paths:
       - application/json
       parameters: []
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /v2/loanprograms:
@@ -495,7 +495,7 @@ paths:
         format: int32
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /v2/loanprograms/BasePersonalFixed:
@@ -522,7 +522,7 @@ paths:
         format: int32
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
 definitions:
