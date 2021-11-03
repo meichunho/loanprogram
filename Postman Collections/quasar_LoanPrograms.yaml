@@ -104,7 +104,9 @@ paths:
       parameters:
       - name: Content-Type
         in: header
-        required: true
+        required: false
+        enum:
+        - application/json
         type: string
         description: ''
       - name: clientId
@@ -155,7 +157,9 @@ paths:
         description: ''
       - name: Content-Type
         in: header
-        required: true
+        required: false
+        enum:
+        - application/json
         type: string
         description: ''
       - name: Body
@@ -193,7 +197,9 @@ paths:
         description: ''
       - name: Content-Type
         in: header
-        required: true
+        required: false
+        enum:
+        - application/json
         type: string
         description: ''
       - name: Body
@@ -232,7 +238,9 @@ paths:
         description: ''
       - name: Content-Type
         in: header
-        required: true
+        required: false
+        enum:
+        - application/json
         type: string
         description: ''
       - name: Body
